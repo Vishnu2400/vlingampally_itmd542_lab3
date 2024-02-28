@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const contactsRepo = require('../src/contactsFileRepository');
+const contactsRepo = require('../src/contactsSQLRepository');
 const crypto = require('crypto');
 
 
