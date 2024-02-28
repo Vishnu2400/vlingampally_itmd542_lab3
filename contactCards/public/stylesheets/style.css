@@ -1,0 +1,278 @@
+/* Style for Links */
+a.btn-link {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* Change button background color on hover */
+a.btn-link:hover {
+  background-color: #0056b3;
+}
+
+/* Style for Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+
+/* Style for View Button */
+a.btn-view {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #007bff; /* Blue color for View button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Change button background color on hover */
+a.btn-view:hover {
+  background-color: #0056b3; /* Darker blue color */
+}
+
+/* Style for Edit Button */
+a.btn-edit {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #ffc107; /* Yellow color for Edit button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Change button background color on hover */
+a.btn-edit:hover {
+  background-color: #d39e00; /* Darker yellow color */
+}
+
+
+/* Style for Delete Button */
+button.btn-delete {
+  padding: 7px 10px;
+  background-color: #dc3545; /* Red color for Delete button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Styles for Add Contact Page */
+.add-contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-contact-container form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-contact-container form div {
+  margin-bottom: 15px;
+}
+
+.add-contact-container form label {
+  display: block;
+  font-weight: bold;
+}
+
+.add-contact-container form input[type='text'],
+.add-contact-container form input[type='email'],
+.add-contact-container form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.add-contact-container form button[type='submit'],
+.add-contact-container form a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-contact-container form button[type='submit']:hover,
+.add-contact-container form a:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styles for Confirm Delete Page */
+.confirm-delete-container h1 {
+  text-align: center;
+}
+
+.confirm-delete-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirm-delete-container div {
+  margin-bottom: 10px;
+}
+
+.confirm-delete-container label {
+  font-weight: bold;
+}
+
+.confirm-delete-container span {
+  margin-left: 10px;
+}
+
+.confirm-delete-container form {
+  text-align: center;
+}
+
+.confirm-delete-container form button[type='submit'],
+.confirm-delete-container form a {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red color for Confirm Delete button */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-delete-container form button[type='submit']:hover,
+.confirm-delete-container form a:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+/* Styles for Contact Details Page */
+./* Styles for Contact Details Page */
+.contact-details-container .container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details-container .container table.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-details-container .container table.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-details-container .container table.table td:first-child {
+  font-weight: bold;
+}
+
+.contact-details-container .container form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-details-container .container button.btn-delete,
+.contact-details-container .container a.btn-edit {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-details-container .container button.btn-delete:hover,
+.contact-details-container .container a.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styles for Edit Contact Page */
+.edit-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-container form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edit-container form div {
+  margin-bottom: 15px;
+}
+
+.edit-container form label {
+  display: block;
+  font-weight: bold;
+}
+
+.edit-container form input[type='text'],
+.edit-container form input[type='email'],
+.edit-container form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.edit-container form button[type='submit'],
+.edit-container form a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-container form button[type='submit']:hover,
+.edit-container form a:hover {
+  background-color: #0056b3;
+}
+
+.edit-container .redtext {
+  color: red;
+}

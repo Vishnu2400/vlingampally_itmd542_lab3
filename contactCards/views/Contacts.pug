@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 All Contacts
+  a.btn-link(href='/contacts/add') Add Contact
+
+  br
+  br
+  hr
+
+  table
+    thead
+      tr
+        th First Name
+        th Last Name
+        th Email Address
+        th Actions
+    tbody
+      each contact in contacts
+        tr
+          td= contact.firstName
+          td= contact.lastName
+          td= contact.emailAddress ? contact.emailAddress : 'N/A'
+          td
+            a.btn-view(href=`/contacts/${contact.id}`) View
+            a.btn-edit(href=`/contacts/${contact.id}/edit`) Edit
+            form(method='GET' action=`/contacts/${contact.id}/delete`)
+              button.btn-delete(type='submit') Delete

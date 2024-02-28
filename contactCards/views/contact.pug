@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .container
+    h1 Contact Details
+    if contact
+      table.table
+        tbody
+          tr
+            td First Name:
+            td= contact.firstName
+          tr
+            td Last Name:
+            td= contact.lastName
+          tr
+            td Email Address:
+            td= contact.emailAddress ? contact.emailAddress : 'N/A'
+          tr
+            td Notes:
+            td= contact.notes ? contact.notes : 'N/A'
+          tr
+            td Created Date/Time:
+            td= contact.createdDateTime
+          tr
+            td Last Edited Date/Time:
+            td= contact.lastEditedDateTime
+        tr
+          td
+            form(action=`/contacts/${contact.id}/delete` method='GET')
+              button.btn-delete(type='submit') Delete
+          td
+            a.btn-edit(href=`/contacts/${contact.id}/edit`) Edit
+    else
+      p Contact not found.

@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .confirm-delete-container
+    h1 Confirm Delete
+    p Are you sure you want to delete the contact?
+    if contact
+      div
+        label(for='firstName') First Name:
+        span= contact.firstName
+      div
+        label(for='lastName') Last Name:
+        span= contact.lastName
+      div
+        label(for='emailAddress') Email Address:
+        span= contact.emailAddress ? contact.emailAddress : 'N/A'
+      div
+        label(for='notes') Notes:
+        span= contact.notes ? contact.notes : 'N/A'
+      div
+        label(for='createdDateTime') Created Date/Time:
+        span= contact.createdDateTime
+      div
+        label(for='lastEditedDateTime') Last Edited Date/Time:
+        span= contact.lastEditedDateTime
+      form(method='POST' action=`/contacts/${contact.id}/delete`)
+        button(type='submit') Confirm Delete
+        | 
+        a(href=`/contacts/${contact.id}`) Cancel
+    else
+      p Contact not found.

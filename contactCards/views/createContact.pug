@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .add-contact-container
+    h1 Add New Contact
+    if msg
+      p(class='redtext')= msg
+    form(method='POST' action='/contacts/add')
+      div
+        label(for='firstName') First Name:
+        input(type='text' name='firstName' id='firstName' required)
+      div
+        label(for='lastName') Last Name:
+        input(type='text' name='lastName' id='lastName' required)
+      div
+        label(for='emailAddress') Email Address:
+        input(type='email' name='emailAddress' id='emailAddress')
+      div
+        label(for='notes') Notes:
+        textarea(name='notes' id='notes' rows='4' cols='50')
+      button(type='submit') Create Contact 
+      | 
+      a(href='/contacts') Cancel
