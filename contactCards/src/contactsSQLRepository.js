@@ -38,8 +38,8 @@ const contactRepo = {
     deleteById: (id) => {
 
         const stmt = db.prepare("DELETE FROM contacts WHERE id= ?");;
-        const result = stmt.run(id);
-        console.log(`rows deleted:'+  ${result.changes}`); 
+        const rs = stmt.run(id);
+        console.log(`rows deleted:'+  ${rs.changes}`); 
 
     },
     update: (contact) => {
